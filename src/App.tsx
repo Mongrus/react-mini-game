@@ -38,13 +38,13 @@ const App: React.FC = () => {
     top: `${60}rem`,
   });
   const bat = useRef(0);
-  // Расположение змеи
+  // Расположение паук
   const [optionsBot3, setOptionsBot3] = useState({
     left: `${60}rem`,
     top: `${60}rem`,
   });
   const snake = useRef(0);
-  // Расположение крокодила
+  // Расположение скорпион
   const [optionsBot4, setOptionsBot4] = useState({
     left: `${60}rem`,
     top: `${60}rem`,
@@ -310,7 +310,7 @@ const App: React.FC = () => {
     return () => clearInterval(interval);
   }, [setOptionsBot2, optionsBot2]);
 
-  // Змея активна
+  // Паук активна
   useEffect(() => {
     const interval = setInterval(
       () => {
@@ -644,10 +644,10 @@ const App: React.FC = () => {
                     <h1>🦇</h1>
                   </div>
                   <div className="bot" style={optionsBot3}>
-                    <h1>🐍</h1>
+                    <h1>🕷️</h1>
                   </div>
                   <div className="bot" style={optionsBot4}>
-                    <h1>🐊</h1>
+                    <h1>🦂</h1>
                   </div>
                   <div className="bot" style={optionsBot5}>
                     <h1>🐅</h1>
