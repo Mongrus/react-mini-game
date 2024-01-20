@@ -81,7 +81,7 @@ const App: React.FC = () => {
   //------------------------------------------------------------------------------------
 
   const [points, setPoints] = useState(0);
-  const [eat, setEat] = useState(Math.floor(Math.random() * 6));
+  const [eat, setEat] = useState(Math.floor(Math.random() * 5));
   const [lovePoints, setLovePoints] = useState([<></>]);
   const [lovePointsQuantity, setLovePointsQuantity] = useState(0);
   const [startGame, setStartGame] = useState(false);
@@ -633,10 +633,9 @@ const App: React.FC = () => {
                   <div className="point" style={optionsPoint}>
                     {(eat === 0 && <h2>🍇</h2>) ||
                       (eat === 1 && <h2>🍓</h2>) ||
-                      (eat === 2 && <h2>🫐</h2>) ||
-                      (eat === 3 && <h2>🍎</h2>) ||
-                      (eat === 4 && <h2>🍒</h2>) ||
-                      (eat === 5 && <h2>🍐</h2>)}
+                      (eat === 2 && <h2>🍎</h2>) ||
+                      (eat === 3 && <h2>🍒</h2>) ||
+                      (eat === 4 && <h2>🍐</h2>)}
                   </div>
                   <div className="bot" style={optionsBot}>
                     <h1>🐺</h1>
